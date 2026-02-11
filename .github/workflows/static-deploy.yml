@@ -15,7 +15,7 @@ jobs:
       - name: code static to s3
         run: |
           aws s3 sync ./ s3://vcube-static-demo/ \
-          -- exclude "*" \
-          -- include "index.html"
+          --exclude "*" \
+          --include "index.html"
         
         
